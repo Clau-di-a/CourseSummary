@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 - Claudia's Udemy Course Summary</title>
+    <link href="MainBody.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bgimagehtml">
+        <br>
+        <h1>1. HTML 5</h1>
+        <br><br><br><br><br>
+    </div>
+    <a href="#HTMLtags">HTML TAGS</a><span> | </span>
+    <a href="#Head">Head</a><span> | </span>
+    <a href="#Heading">Heading</a><span> | </span>
+    <a href="#Paragraph">Paragraph</a><span> | </span>
+    <a href="#Break">Break</a><span> | </span>
+    <a href="#Div">Div</a><span> | </span>
+    <a href="#Span">Span</a><span> | </span>
+    <a href="#Orderedunordered">Ordered & unordered list</a><span> | </span>
+    <a href="#Image">Image</a><span> | </span>
+    <a href="#Link">Link</a><span> | </span>
+    <a href="#Path">HTML FILE PATHS</a>
+    <br>
+    <br>
+    <p><b>HTML: Hypertext Markup Language</b></p>
+    <ul>
+        <li>All info & data that needs to show up on a website, the backbone, like text, image & urls.</li>
+        <li> The server submits the html protocol if a website is being requested. With the html protocol, the browser
+            knwos what to show. Because of that, changes that have been done in the html will disappear again if the
+            page is being reloaded.</li>
+        <li>To structure your code, it would be good to always ad a tab if you go one level lower</li>
+    </ul>
+    <br>
+
+    <h2><a id="HTMLtags"></a>HTML Tags</h2>
+
+
+    <h3><a id="Head"></a>Head tag</h3>
+    <ul>
+        <li> The &lt;head&gt; element is a container for metadata (data about data) and is placed between the
+            &lt;html&gt; tag and the &lt;body&gt; tag. Metadata is not displayed.</li>
+        <li>Metadata typically define the document title, character set, styles, scripts, and other meta information.
+        </li>
+        <li>The following elements can go inside the &lt;head&gt; element: <br> <b>title</b> (mandatory), style, base,
+            link, meta, script, noscript <br>
+            <ul>
+                <li>Title tag: <br>
+                    The title tag contains the title of the website. It is shown on the page-tab, is used for bookmarks
+                    and for the indexing / SEO.</li>
+                <li><a href="https://www.seo-analyse.com/seo-lexikon/h/head-tag" target="_blank">Explanation of other
+                        elements</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3><a id="Heading"></a>Heading tags</h3>
+    <ul>
+        <li>Headings, e.g. <code class="codeclaudia"> &lt;h1&gt;</code> geben Info an Google, was wichtig ist auf einer
+            Seite / um was diese gehen -> Google rankt auch die Seiten dementsprechend, wenn Keywords und Headings
+            übereinstimmen ist das Ranking besser.</li>
+        <li>Only use one &lt;h1&gt; per page - this should represent the main heading/subject for the whole page. Also,
+            do not skip heading levels - start with &lt;h1&gt;, then use &lt;h2&gt;, and so on.</li>
+        <li>When using headings, include keywords in your headings. Don’t apply headings to entire paragraphs.</li>
+        <li>Don’t use Heading 5 or 6 – search engines don’t track them.</li>
+    </ul>
+
+
+    <h3><a id="Paragraph"></a>Paragraph tag</h3>
+    <p>The <code class="codeclaudia">&lt;p&gt;</code> tag defines a paragraph. <br>
+        When writing a text in the visual editor, the paragraph tag is automatically created when you put a space
+        between two lines.</p>
+
+    <h3><a id="Break"></a>Break tag</h3>
+    <p>Man kann den Break-Tag verwenden <code class="codeclaudia">&lt;br&gt;</code> um einen Zeilenabstand zu machen.
+        Bei diesem Tag benötigt es den Ending-Tag </br> nicht weil es keinen Sinn macht bzw. nicht möglich ist, etwas in
+        einen Zeilenabstand einzufügen.</p>
+
+    <h3><a id="Div"></a>Div tag</h3>
+    <ul>
+        <li>The "Div-tag" is an html tag that really only makes sense if using CSS.</li>
+        <li>The div-tags build like boxes that encompass everything what is inside them. --> if you want to group things
+            together (and do some sort of styling with them).</li>
+        <li>You can also have divs inside divs.</li>
+        <li>Typically, websites have a lot of divs. So it is not very easy to define a certain style that should apply
+            for all divs.</li>
+    </ul>
+
+    <h3><a id="Span"></a>Span Tag</h3>
+    <ul>
+        <li>The span tag is an inline container used to mark up a part of a text, or a part of a document.</li>
+        <li>The span tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.</li>
+        <li>The span tag is much like the div element, but <b>div is a block-level element</b> and <b>span is an inline
+                element</b>.</li>
+        <li>It is not allowed to place a div tag within a span tag.</li>
+    </ul>
+
+    <h3><a id="Orderedunordered"></a>Ordered & unordered list tags</h3>
+    <p><code class="codeclaudia"> &lt;ul&gt;</code> : Unordered list</p>
+    <p><code class="codeclaudia"> &lt;ol&gt;</code> : Ordered list</p>
+    <p><code class="codeclaudia"> &lt;li&gt;</code> : List item</p>
+    <br>
+    <p> Example: <code class="codeclaudia"><br>
+            &lt;ul&gt; <br>
+            &lt;li&gt; green &lt;/li&gt; <br>
+            &lt;li&gt; red &lt;/li&gt; <br>
+            &lt;li&gt; blue &lt;/li&gt; <br>
+            &lt;/ul&gt; </code> </p>
+
+    <h3><a id="Image"></a>Image tag</h3>
+    <p>The image element doesn't have an ending tag. It is just &lt;img&gt;, example: <br>
+        <code class="codeclaudia">&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500"
+            height="600"&gt;</code><br><br>
+    </p>
+    <p><b>Attributes:</b></p>
+    <ul>
+        <li> <b>src :</b> Means "source" and specifies the path to the image.<br> You can add images by pointing to your
+            local folder or by using an image url from the website. Just if the image url changes, it will look
+            broken.<br>
+            Do not forget the ending img_girl<b>.jpg</b></li>
+        <li> <b>alt :</b> Means "alternative" and specifies an alternate text for the image, if the image for some
+            reason cannot be displayed (visually impaired people). -> Also, the "alt" helps to find and rank your images
+            (SEO) -> show them in the Google Images Search Results.</li>
+        <li> <b>width / height :</b> Even though you can adjust the image size in the html, the image should be around
+            the right size before you add it to the website. Otherwise, it takes much more capacity to load the
+            image/website. However, the height and width attributes should still be indicated so Google knows from the
+            beginning how to render. <br> Depending on the editor, the "" are not used for the height and width
+            attributes. Thus, it would just be e.g. height=200</li>
+    </ul>
+
+    <h3><a id="Link"></a>Link tag</h3>
+    <p> The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another Example: <br>
+        <code class="codeclaudia"> &lt;a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">
+            Visit W3Schools.com! &lt;/a&gt;</code> <br> <br>
+        <b>Attributes:</b>
+        <ul>
+            <li><b>href :</b> page URL <br>
+                Do not forget the <b>"https://"</b>, otherwise it doesn't work.</li>
+            <li><b>target :</b> "_blank" <br>
+                <code class="codeclaudia">blank</code> targets an existing frame or window called "blank". A new window
+                is created only if "blank" doesn't already exist. <br>
+                <code class="codeclaudia">_blank</code> is a reserved name which targets a new, unnamed window. -> use
+                <code class="codeclaudia">_blank</code> </li>
+            <li><b>rel :</b> for example: "noopener", "noreferrer", "nofollow" </li>
+        </ul>
+    </p><br>
+
+<H2><a id="Path"></a>HTML File Paths</H2>
+<table style="margin-left: 40px;">
+    <tbody><tr><th>Path</th><th>Description</th></tr>
+    <tr>
+    <td>&lt;img src="picture.jpg"&gt;</td>
+    <td>The "picture.jpg" file is located in the same folder as the current page</td>
+    </tr>
+    <tr>
+    <td>&lt;img src="images/picture.jpg"&gt;</td>
+    <td>The "picture.jpg" file is located in the images folder in the current folder</td>
+    </tr>
+    <tr>
+    <td>&lt;img src="/images/picture.jpg"&gt;</td>
+    <td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+    </tr>
+    <tr>
+    <td>&lt;img src="../picture.jpg"&gt;</td>
+    <td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+    </tr>
+    </tbody></table><br>
+    <div id="footer">Made by Claudia</div>
+
+</body>
+
+</html>

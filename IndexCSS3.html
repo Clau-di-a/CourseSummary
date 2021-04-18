@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 - Claudia's Udemy Course Summary</title>
+    <link href="MainBody.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgimagecss">
+        <br>
+        <h1>2. CSS 3</h1>
+        <br><br><br><br><br>
+    </div>
+    <a href="#Adding">Possibilities for adding CSS to website</a><span> | </span>
+    <a href="#Priority">Style&nbsp;Priorities</a><span> | </span>
+    <a href="#Tips">CSS&nbsp;tips</a><span> | </span>
+    <a href="#Colors">Colors</a><span> | </span>
+    <a href="#Text">Text&nbsp;styles</a><span> | </span>
+    <a href="#Font">Fonts</a><span> | </span>
+    <a href="#Border">Borders</a><span> | </span>
+    <a href="#Heightwidth">Height&nbsp;&&nbsp;width</a><span> | </span>
+    <a href="#Hover">Hover</a><span> | </span>
+    <a href="#ClassesIDs">Class&nbsp;vs&nbsp;ID</a><span> | </span>
+    <a href="#PaddingMargin">Padding&nbsp;&&nbsp;Margin</a><span> | </span>
+    <a href="#Position">Position</a><span> | </span>
+    <a href="#Positionmargin">Position&nbsp;vs&nbsp;Margin</a><span> | </span>
+    <br>
+    <br>
+
+    <p><b>CSS: Cascading Style Sheets</b> <br>
+        CSS is what makes a website look pretty. CSS can transform the exactly same html look completely different, e.g.
+        buttons at a different place, diff colors, etc. <br><br>
+        Good reference: <a href="https://www.w3schools.com" target="_blank"> www.w3schools.com</a></p>
+    <br>
+
+    <h2><a id="Adding"></a>Possibilities for adding CSS to website</h2>
+    <p>There are three different ways CSS can be added to a website: Inline, in the head of the html file or in a
+        separate CSS file.</p>
+    <h3>Inline</h3>
+    <p>Directly adding CSS with the style attribute and the desired properties in the body
+        tag or another tag within the body, example:<br>
+        <code class="codeclaudia">&lt;h1 style="background-color: rgb(87, 167, 56);"&gt; Some important facts about me,
+            Claudia &lt;/h1&gt;</code> <br>
+        In-line styles sollten wenn möglich vermieden werden. Sowieso, wenn in einem Paragraph ein inline Style
+        und eine id/class verwendet wird, dann hat der Style vorrang. -> Wird so schwierig, die Seite konsistent
+        zu machen.</p>
+
+    <h3>In HTML Head</h3>
+    <p>Adding the CSS specifications to the head, example: <br>
+        <code class="codeclaudia">&lt;head&gt; <br>
+            &lt;title&gt;Good to know about Claudia&lt;/title&gt; <br>
+            &lt;style&gt;h1{background-color: darkcyan;} &lt;/style&gt; <br>
+            &lt;/head&gt; </code>
+    </p>
+
+    <h3>Separate CSS file</h3>
+    <p>Having a separate CSS file is the best way. The CSS file is often called main.css. The file with the css
+        specifications needs to be indicated in the head of the
+        html file (often called index.html):</p>
+    <ul>
+        <li> In html file: <br>
+            <code class="codeclaudia">&lt;head&gt; <br>
+                &lt;title&gt; Good to know about Claudia&lt;/title&gt;<br> &lt;link href="MainFirstCSS.css"
+                rel="stylesheet" type="text/css"&gt;<br>
+                &lt;/head&gt; </code> </li>
+        <li>In css file the design specifications can be added, e.g.: <br> <code
+                class="codeclaudia">h1{background-color: rgb(31, 88, 69);} </code> </li>
+    </ul><br>
+
+    <h2><a id="Priority"></a>Style priorities</h2>
+
+    <p>The priority of the different options above is as following (top has highest priority):</p>
+    <ol>
+        <li>The inline css specifications / directly in the text (e.g. h1) of the html file</li>
+        <li>The css specifications in the head ( &lt;head&gt; &lt;/head&gt;) of the html file</li>
+        <li>The css specifications in the separate css file</li>
+    </ol>
+
+    <p>However, if one wants to overwrite a certain specification even though it originally has higher priority, this
+        can be done with "!important" : <br>
+        <code class="codeclaudia">h1{background-color: #1F5845 !important;} </code> </p> <br>
+
+        <h2><a id="Tips"></a>CSS Tips</h2>
+        <ul>
+            <li>If a <b>style should be used for two different tags</b>, it can just be added with a comma: <br>
+                <code class="codeclaudia">h1, h2{background-color: #1F5845; color: seagreen;}</code></li>
+            <li>The <b>inherit</b> keyword specifies that a property should inherit its value from its parent element. The
+                inherit keyword can be used for any CSS property, and on any HTML element.</li>
+        </ul>
+        <br>
+
+    <h2><a id="Colors"></a>Colors</h2>
+    <p>Either: <code class="codeclaudia">color: rgb(31, 88, 69); </code> <br>
+        or: <code class="codeclaudia">color: #1F5845 </code> <br>
+        <a href="https://htmlcolorcodes.com/" target="_blank">www.htmlcolorcodes.com </a>
+    </p><br>
+
+
+    <h2><a id="Text"></a>Text Styles</h2>
+    <h3>text-align</h3>
+    <p>right, center, left, justify (Blocksatz), inherit</p>
+    <h3>text-transform</h3>
+    <p><b>capitalize, full-width, inherit, lowercase, none, uppercase</b> <br>
+        --> full-width:
+        Erzwingt das Rendern der Buchstaben als rechteckige Form, was z.B. die Interaktion mit
+        ostasiatischen Sprachen (z.B. Chinesisch oder Japanisch) erlaubt.
+    </p>
+
+    <p>Nick recommends to not use the "text-transform" property since this actually changes the data. You rather should
+        change that in the html. --> Maybe if you wanna make a text on hoover all uppercase, then this text-transform
+        might be useful.
+    </p><br>
+
+    <h2><a id="Font"></a>Fonts</h2>
+    <p>
+        For adding a font to a website, Nick totally recommends <b>Google Fonts.</b> --> Completely free fonts that
+        can be easily integrated into website. <br>
+    </p>
+    <p>Just go to <a href="https://fonts.google.com/" target="_blank">www.fonts.google.com</a> and copy the
+        code from there into the html as link in the head and into the css for whatever property you wish.
+        If you want to have it for the whole website, it needs to be added for the body in the CSS: <br>
+        <code class="codeclaudia">body {font-family: Gloria Hallelujah, cursive;}</code>
+    </p><br>
+
+    <h2><a id="Border"></a>Borders</h2>
+    <p>In CSS for the paragraph for example:<br>
+        <code class="codeclaudia">p{border-style: dotted;<br>
+            border-color: seagreen;<br>
+            border-width: 5px;}</code> <br><br>
+        Or for example inline (should not be done if possible):<br>
+        <code class="codeclaudia">&lt;h2 style="border-style: dashed;"&gt; My favorite movies &lt;/h2&gt;</code>
+    </p><br>
+
+    <h2><a id="Heightwidth"></a>Element height & widht</h2>
+    <p>It can be indicated in pixels, but also in percentage.
+        For the width, 100% is the full width of the screen. For the heights, 100% is as high as the content of
+        the tag.
+        --> Very handy as there are many different screen sizes. <br>
+        <b>CSS example:</b><br>
+        <code class="codeclaudia">p{border-style: dotted; border-color: seagreen; border-width: 5px; width: 50%;
+            height: 100%;}</code>
+    </p><br>
+
+    <h2><a id="Hover"></a>Hover Effect</h2>
+    <p>
+        <code class="codeclaudia">h1: hover {background-color: aqua;}</code> <br>
+        --> pay attention that hovering is not possible in mobile!
+    </p><br>
+
+    <h2><a id="ClassesIDs"></a>Classes vs ID in CSS</h2>
+
+    <h3>ID</h3>
+    <p>
+        in the html: <code class="codeclaudia">&lt;h1 id="fun"&gt; I like CSS &lt;/h1&gt;</code> <br>
+        in the CSS: <code class="codeclaudia">#fun {background-color: #5e882e; )</code> <br><br>
+
+        <b>ID’s are unique</b>
+        <ul>
+            <li>Each element can have only one ID</li>
+
+            <li>Each page can have only one element with that ID <br>
+                Id is used for single elements that appear on the page for only once (e.g. header, footer, menu)<br>
+                --> Your code will not pass validation if you use the same ID on more than one element.</li>
+        </ul>
+        <p><b>ID’s have special browser functionality</b> (classes not). This is the “hash value” in the URL. If you
+            have a URL like <i>http://yourdomain.com#comments</i>, the browser will attempt to locate the element
+            with an ID of “comments” and will automatically scroll the page to show that element. It is important to
+            note here that the browser will scroll whatever element it needs to in order to show that element, so if
+            you did something special like a scrollable DIV area within your regular body, that div will be scrolled
+            too. This is an important reason right here why having ID’s be absolutely unique is important. So your
+            browser knows where to scroll! <br> <br>
+
+            <b>ID's sind vorranging zu Classes.</b>
+        </p>
+    </p>
+
+
+    <h3>Class</h3>
+    <p>
+        in the html: <code class="codeclaudia">&lt;h1 class="redstuff"&gt; I like CSS &lt;/h1&gt;</code> <br>
+        in the CSS: <code class="codeclaudia">.redstuff {background-color: #5e882e; )</code> --> casing of the
+        name needs to be exactly the same.
+    </p> <br>
+
+    <p><b>Classes are not unique</b></p>
+    <ul>
+        <li>You can use the same class on multiple elements.<br>
+            Class is used for single or multiple elements that appear on the page for once or more than once
+            (e.g. paragraphs, links, buttons, input boxes)</li>
+        <li>You can use multiple classes on the same element.<br>
+            Elements may also be assigned multiple classes at the same time. This is especially helpful when you
+            need to style a smaller group of elements within a certain type of element on your page. For
+            example, let’s say you have a .content class that is applied to all paragraphs. If you want to add a
+            border or any other style to certain paragraphs, you can add another class such as .bordered</li>
+    </ul>
+
+    <h3>An HTML element can have both an id and a class</h3>
+    <p>For example, let’s say you need to have two boxes on your page with the same size and style but different
+        positioning. In this case, you can assign the same class to these boxes to control their size and style
+        and then assign a different id to each box to control their positions.<br><br>
+
+        Sources: <br> <a href="https://www.developintelligence.com/blog/2016/04/css-class-vs-id-which-one-to-use/">
+            https://www.developintelligence.com/blog/2016/04/css-class-vs-id-which-one-to-use/ </a> <br>
+        <a
+            href="https://css-tricks.com/the-difference-between-id-and-class/">https://css-tricks.com/the-difference-between-id-and-class/</a>
+    </p><br>
+
+    <h2><a id="PaddingMargin"></a>Padding & Margin</h2>
+    <p>
+        <b>Padding:</b> innerhalb von Element.<br>
+        <b>Margin:</b> ausserhalb von Element - Grenze zu anderen Elementen.<br>
+        --> Diese Elemente sieht man auch sehr schön mit "Inspect" in Google Chrome.<br>
+         <img src="Images/PaddingMargin.JPG" alt="Padding & Margin Image" width="600px"><br>
+        From: <a href="https://www.w3schools.com/css/css_boxmodel.asp"
+            target="_blank">www.w3schools.com/css/css_boxmodel.asp</a> <br><br>
+
+        Example: <br>
+        <code class="codeclaudia">p{border-style: dotted;<br>
+            border-color: seagreen;<br>
+            border-width: 5px;<br>
+            padding: 20px;<br>
+            margin-top: 100px;}</code><br><br>
+
+        Wenn man auf allen Seiten das gleiche Padding/Margin haben möchte, dann einfach <code
+            class="codeclaudia">padding: 20px;</code> sonst e.g. <code class="codeclaudia">padding-top:
+            20px;</code>. Wenn man auf allen vier Seiten unterschiedliche angeben möchte, kann man das auch so
+        machen <code class="codeclaudia">padding: 5px 10px 15px 20px;</code> -> top, right, bottom, left
+    </p>
+
+    <h3><a id="Centering"></a>Centering an element with margin</h3>
+    <p>Use "margin: auto", for example: <br>
+        <code class="codeclaudia">p{width: 50% <br>
+            margin: auto;}</code> <br>
+        --> 50% so that we can see the effect of the "auto".
+    </p><br>
+
+    <h2><a id="Position"></a>Position</h2>
+    <ul>
+        <li>
+            <b>Absolute</b> <br> It takes whatever is the nearest property and makes the spacing from there.
+            E.g. if a text is inside a div element, then the spacing will apply to the div box and not to
+            the whole screen. In order for this to work, the "parent" element needs to be in "relative" and
+            not "statics" as by default.<br>
+            <img src="Images/position.JPG" alt="Position Example" width="600"></li>
+        <li><b>Fixed</b> <br> The element should stay at a certain position, no matter what, e.g. the menu
+            bar. E.g.:<br>
+            <code class="codeclaudia">position: fixed;<br>
+                bottom: 100px;</code><br>
+            --> This element always stays a 100 px from the bottom of the screen.</li>
+        <li><b>Inherit</b></li>
+        <li><b>Relative</b> <br>
+            An element with position relative is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</li>
+        <li><b>Static</b> <br> Every item in html by default is "static" / at the normal place of the page / where it is.
+            in the code. If this is set, all other place properties get ignored.</li>
+        <li><b>Sticky</b> <br>
+            An element with position sticky is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). </li>
+    </ul> <br>
+
+    <p>Example for "absolute":<br>
+        (div is the "parent", "posi" is the class applied to a paragraph inside the div) <br>
+        <code class="codeclaudia">div{<br>border-style: double;<br>
+            position: relative;<br>
+            left: 20px; <br>}<br><br>
+
+            .posi{<br>
+            position: absolute;<br>
+            top: 0px;<br>
+            right: 0px;<br>}</code>
+
+    </p><br>
+
+    <h2><a id="Positionmargin"></a>Position vs Margin</h2>
+    <p>
+        What's the difference between<br>
+
+        <code class="codeclaudia">position : relative;<br>
+            bottom : 10px;</code> <br>
+
+        And :<br>
+
+        <code class="codeclaudia">margin-top: -10px;</code> <br>
+
+
+        Aren't they the same? <br><br>
+
+
+
+        <b>Explanation 1:</b> <br>
+
+        No; if you give something "position: relative" and pull it up 10 pixels, it will move, but continue
+        to occupy (in terms of its box) the 10 pixels below it that it previously occupied.
+
+        If you give something margin and pull it up 10 pixels, it moves up and brings everything underneath
+        it with it, too. <br> <br>
+
+        <b>Explanation 2:</b><br>
+
+        When you are using "position:relative" then it positions the element at it's normal location in the
+        document flow, and then subsequently moves it to the offset position. The space it originally
+        occupies is reserved in the layout (left empty).<br>
+        "Margins" however is not positioning properties, infact it is a part of box model used to create
+        block boxes on the page. It is the space that exists between the border edge of an element to that
+        of next adjacent element.<br>
+        Put (more) simply, relative positioning will visually shift the contents of the relative element,
+        without affecting its place in the page flow. Margins, on the other hand, push or pull elements
+        relative to their natural position, and so affect layout. <br><br>
+
+        <b>--> Margin ist immer auf ein Element bezogen / für ein Element. Position nicht. Position
+            verwendet man eigentlich nur mit "absolut", sonst kann man Margin benutzen.</b>
+    </p><br>
+
+<div id="footer">Made by Claudia</div>
+
+
+</body>
+
+</html>

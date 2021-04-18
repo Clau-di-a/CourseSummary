@@ -1,0 +1,117 @@
+.codeclaudia{
+    background-color: #ebebeb;
+    color: rgb(32, 112, 187);
+    font-size: 100%;
+}
+
+.bgimage{
+    background-image: url(images/hello-i-m-nik-l4ADb9OVqTY-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f4f4f4;
+    }
+
+.bgimage2{
+    background-image: url(images/pexels-francesco-ungaro-1670977.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f4f4f4;
+    }
+
+.myvideo{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
+h1{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    line-height: 110%;
+    margin-left: 40px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+h2{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    line-height: 110%;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+h3{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color:hotpink;
+    line-height: 110%;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ol{
+    margin-left: 55px;
+    margin-top: 0px;
+    color:hotpink;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+a:link {
+    color:hotpink;
+
+}
+
+a:visited {
+    color:hotpink;
+
+}
+
+a:focus {
+
+}
+
+a:hover {color:rgb(247, 26, 136);
+
+}
+
+a:active {
+
+}
