@@ -5,7 +5,7 @@
 }
 
 .bgimage{
-    background-image: url(images/hello-i-m-nik-l4ADb9OVqTY-unsplash.jpg);
+    background-image: url(./images/hello-i-m-nik-l4ADb9OVqTY-unsplash.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,7 +14,7 @@
     }
 
 .bgimagehtml{
-    background-image: url(images/pexels-francesco-ungaro-1670977.jpg);
+    background-image: url(./images/pexels-francesco-ungaro-1670977.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,7 +24,7 @@
 
 
     .bgimagecss{
-        background-image: url(images/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
+        background-image: url(./images/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
